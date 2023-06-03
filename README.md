@@ -1,71 +1,38 @@
-# Getting Started with Create React App
+## OpenAI Itinerary Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Description
 
-## Available Scripts
+The AI Itinerary Generator is an application that utilizes the OpenAI API model "text-davinci-003" to generate personalized travel itineraries. The user provides input regarding their destination, food preferences, and activity preferences, and the application generates a detailed itinerary for each day of their trip. The generated itinerary includes recommendations for activities, along with descriptions and shortened Google Maps links, as well as recommendations for lunch and dinner restaurants.
 
-In the project directory, you can run:
+### Why We Chose the Technologies
 
-### `npm start`
+- OpenAI API:
+    - Flexibility and adaptability: The OpenAI model can be refined based on user prompts and can respond accordingly. It has access to a wide range of information and can provide details about various destinations, attractions, and logistical information.
+    - Convenience: Instead of searching multiple sources and manually compiling information, the OpenAI model can provide personalized recommendations based on user preferences.
+- Google Maps Places API: I used this API to fetch a list of countries and cities in the world for users to select from. This helps ensure accurate and comprehensive destination options.
+- React: React is a popular JavaScript library for building user interfaces, and it provides a convenient and efficient way to develop dynamic web applications.
+- Ant Design: I used Ant Design, a React UI library, to enhance the visual appearance and user experience of the application. Ant Design offers a wide range of pre-designed components and a consistent design system, which helps in building a professional and user-friendly interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Challenges Faced and Future Improvements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Outdated information: One of the challenges I encountered is that the information provided by the OpenAI model is only updated until 2021. This means that the generated links and information may be outdated. To address this, I plan to integrate other APIs that provide more up-to-date information or booking capabilities.
+- Lack of visual content: As a language model, OpenAI does not provide images or reference maps, which are often critical when planning a trip. In the future, I aim to integrate with other tools or APIs that can provide visual content and enhance the overall user experience.
+- Speed optimization
 
-### `npm test`
+### How to Install and Run the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install and run the project, follow these steps:
 
-### `npm run build`
+1. Set up the required dependencies and environment:
+    - Clone the project repository to your local machine.
+    - Install the necessary packages and dependencies eg. antd, react-dom, using the package manager of your choice (e.g., npm or yarn).
+    - Set up a local environment file and enter your Google Maps API and OpenAI API keys.
+2. Obtain API keys:
+    - Visit the official documentation for Google Maps API and OpenAI API to learn how to obtain your respective API keys.
+3. Configure the environment:
+    - In your local environment file, enter your API keys.
+4. Run the project:
+    - Start the development server using the appropriate command for your package manager.
+    - Access the application through your web browser at the provided local address.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# itinerary_planner
+Please note that this is a high-level guide, and additional steps or configurations may be required based on your specific development environment and project setup. Refer to the project's documentation for more detailed instructions.
